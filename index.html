@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo-2.svg" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Omar</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img style="width: 45%;" src="assets/img/logo-2.svg" alt="" class="logohat"></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav__link">ABOUT US</a>
+                    </li>
+
+                    <li>
+                        <a href="#trans" class="nav__link">TRANSFORMATION</a>
+                    </li>
+
+                    <li>
+                        <a href="#testimonial" class="nav__link">
+                            TESTIMONIAL
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#calc" class="nav__link">CALCULATOR</a>
+                    </li>
+                </ul>
+                <div class="nav__colse" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="video-container">
+                <video class="home__video" autoplay muted loop>
+                    <source src="assets/img/m.mp4" type="video/mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">Transform Your Life, One Step at a Time</h1>
+                    <p class="home__description">
+                        Transform your fitness with personalized coaching. Build strength, lose weight, and improve health. Let’s get started!
+                    </p>
+                    <!-- <img src="assets/img/cer10.jpg" alt="" class="home__meat"> -->
+                    <div class="home__buttons">
+                        <a href="#menu" class="button">Start Your Journey</a>
+                        <a href="#menu" class="button button__ghost">Explore Plans</a>
+                    </div>
+                </div>
+                <div class="home__images">
+                    <div class="home__circle">
+                        <div class="home__subcricle"></div>
+                    </div>
+                    <img src="assets/img/personalfav.jpg" alt="" class="home__img">
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="brand section" id="brand" data-aos="fade-left">
+            <h2 class="section__title">
+                Certified Expertise You Can Trust
+            </h2>
+            <div class="brand__container container grid">
+                <img src="assets/img/cer1.jpg" alt="" class="brand__img">
+                <img src="assets/img/cer2.jpg" alt="" class="brand__img">
+                <img src="assets/img/cer3.jpg" alt="" class="brand__img">
+                <img src="assets/img/cer4.jpg" alt="" class="brand__img">
+
+            </div>
+
+        </section>
+        <!--==================== PRODUCTS ====================-->
+        <!-- <section class="new section" id="new">
+            <h2 class="section__title">New Breads</h2>
+            <div class="new__container container grid">
+                <div class="new__contect grid">
+                    <article class="new__card">
+                        <div class="new__data">
+                            <h2 class="new__title">Rye Bread</h2>
+                            <p class="new__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dicta, perferendis libero pariatur quas soluta!</p>
+                        </div>
+                        <img src="assets/img/cer1.jpg" alt="" class="new__img">
+                    </article>
+
+                    <article class="new__card">
+                        <div class="new__data">
+                            <h2 class="new__title">Whole Grain Bread</h2>
+                            <p class="new__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia incidunt dolorem minima vel est velit?</p>
+                        </div>
+                        <img src="assets/img/cer2.jpg" alt="" class="new__img">
+                    </article>
+
+                    <article class="new__card">
+                        <div class="new__data">
+                            <h2 class="new__title">Multigrain Bread </h2>
+                            <p class="new__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ratione quos accusantium, aliquid recusandae officia.</p>
+                        </div>
+                        <img src="assets/img/cer3.jpg" alt="" class="new__img">
+                    </article>
+                </div>
+                <a href="#" class="new__button button">See More Breads</a>
+                    </div>
+        </section> -->
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about" data-aos="fade-right">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">Learn More About Us</h2>
+                    <p class="about__description">
+                        Hi, I’m Omar El-Mahdy, an online fitness coach and nutrition specialist with over 4 years of experience. I’ve helped more than 1,000 women transform their lives through personalized training and nutrition plans. Whether you’re looking to build strength,
+                        lose weight, or improve your overall health, I’m here to guide you every step of the way.
+                    </p>
+                    <a href="about.html" class="button">Know More</a>
+                </div>
+                <div class="about__images">
+                    <div class="about__shape"></div>
+                    <img src="assets/img/personalfav.jpg" alt="Fitness Coach" class="about__coffee">
+                </div>
+            </div>
+        </section>
+        <!--==================== POPULAR ====================-->
+        <section class="container89" id="trans" data-aos="fade-left">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <h2 class="section__title"> Your results my passion </h2>
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/trans1.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bulking</h3>
+                                <p class="card__description">
+                                    Passionate about development and design, I carry out projects at the request of users.
+                                </p>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/trans2.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Body recomposition</h3>
+                                <p class="card__description">
+                                    Passionate about development and design, I carry out projects at the request of users.
+                                </p>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/trans3.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bulking</h3>
+                                <p class="card__description">
+                                    Passionate about development and design, I carry out projects at the request of users.
+                                </p>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/trans4.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bulking</h3>
+                                <p class="card__description">
+                                    Passionate about development and design, I carry out projects at the request of users.
+                                </p>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="assets/img/trans5.jpg" alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Bulking</h3>
+                                <p class="card__description">
+                                    Passionate about development and design, I carry out projects at the request of users.
+                                </p>
+
+                                <a href="#" class="card__button">View More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--==================== testimonial ====================-->
+        <section class="testimonial section" id="testimonial" data-aos="fade-right">
+            <h2 class="section__title">
+                Testimonial
+            </h2>
+            <div class="testimonial__container container">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/img/tes1.jpg" alt="" class="testimonial__img">
+                            <h2 class="testimonial__title">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Nour
+                            </h2>
+                            <p class="testimonial__description">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus, praesentium quos quas aliquid nesciunt?
+                            </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                            </div>
+                        </article>
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/img/tes2.jpg" alt="" class="testimonial__img">
+                            <h2 class="testimonial__title">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Ahmed Ali
+                            </h2>
+                            <p class="testimonial__description">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est itaque assumenda magni, consequuntur odit animi. </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                            </div>
+                        </article>
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/img/tes3.jpg" alt="" class="testimonial__img">
+                            <h2 class="testimonial__title">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Moaze Adel
+                            </h2>
+                            <p class="testimonial__description">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam reprehenderit sit dolor quasi dolores ipsam? </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                            </div>
+                        </article>
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/img/tes4.jpg" alt="" class="testimonial__img">
+                            <h2 class="testimonial__title">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Mohamed Hassan
+                            </h2>
+                            <p class="testimonial__description">
+                                <!-- تم تصحيح الاسم هنا -->
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam deleniti tenetur enim molestiae velit et in nulla. </p>
+                            <div class="testimonial__stars">
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-heart-fill"></i>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section bd-container" id="menu" data-aos="fade-left">
+            <!-- <span class="section-subtitle">Special</span> -->
+            <h2 class="section-title">Files without tracking
+            </h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/s.webp" alt="" class="menu__img">
+                    <h3 class="menu__name">package1</h3>
+                    <span class="menu__detail">gold package</span>
+                    <span class="menu__preci">$22.00</span>
+                    <a href="#" class="button menu__button"><i class="ri-shopping-basket-line"></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/s.webp" alt="" class="menu__img">
+                    <h3 class="menu__name">package2</h3>
+                    <span class="menu__detail">silver package</span>
+                    <span class="menu__preci">$12.00</span>
+                    <a href="#" class="button menu__button"><i class="ri-shopping-basket-line"></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/s.webp" alt="" class="menu__img">
+                    <h3 class="menu__name">package3</h3>
+                    <span class="menu__detail">bronze package</span>
+                    <span class="menu__preci">$9.50</span>
+                    <a href="#" class="button menu__button"><i class="ri-shopping-basket-line"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--==================== CALC ====================-->
+        <section class="nutrantion section " id="calc" data-aos="fade-right">
+            <div class="nutrantion__container grid container">
+                <img src="assets/img/calc.png" alt="" class="nutrantion__img">
+
+                <div class="nutrantion__data">
+                    <h2 class="section__title nutrantion__title">
+                        <p data-lang="nurationp1">DISCOVER YOUR </p>
+                        <p data-lang="nurationp2">CALORIE NEEDS</p>
+                    </h2>
+
+                    <p data-lang="nurationp3" class="nutrantion__description">
+                        Discover your daily calorie needs effortlessly with our exclusive calculator. Simply enter your age, weight, and height to get started. This tool is a gift from Coach Wasim to help you stay on track with your nutrition goals.
+                    </p>
+
+                    <div class="nutrantion__details">
+                        <div class="fle">
+                            <p class="nutrantion__details-description nutrantion__details-icon">
+                                <i class="ri-cake-3-line"></i>
+                                <p class="nutrantion__details-description nutrantion__details-icon" data-lang="nurationp11">Find out how many calories you need daily.</p>
+                            </p>
+                        </div>
+                        <div class="fle">
+                            <p class="nutrantion__details-description nutrantion__details-icon">
+                                <i class="ri-clipboard-fill"></i>
+                                <p class="nutrantion__details-description nutrantion__details-icon" data-lang="nurationp12"> Enter your age, weight, and height.</p>
+                            </p>
+                        </div>
+                        <div class="fle">
+                            <p class="nutrantion__details-description nutrantion__details-icon">
+                                <i class="ri-restaurant-fill"></i>
+                                <p class="nutrantion__details-description nutrantion__details-icon" data-lang="nurationp13">Personalized results for your goals.</p>
+                            </p>
+                        </div>
+                        <div class="fle">
+                            <p class="nutrantion__details-description nutrantion__details-icon">
+                                <i class="ri-restaurant-fill"></i>
+                                <p class="nutrantion__details-description nutrantion__details-icon" data-lang="nurationp13">Personalized results for your goals.</p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="calc.html" class="button">
+                        <p data-lang="button">Get Start</p> <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--========== MENU ==========-->
+        <!--==================== CONTACT ====================-->
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <h3 class="footer__title">Social</h3>
+                <div class="footer__social">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-tiktok-line"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div>
+                <h3 class="footer__title">Payment Metho</h3>
+                <div class="footer__pay">
+                    <img src="assets/img/footer-card-1.png" alt="" class="footer__pay-card">
+                    <img src="assets/img/footer-card-2.png" alt="" class="footer__pay-card">
+                    <img src="assets/img/footer-card-3.png" alt="" class="footer__pay-card">
+                    <img src="assets/img/footer-card-4.png" alt="" class="footer__pay-card">
+                </div>
+            </div>
+            <div>
+                <h3 class="footer__title">Subscribe For Discounts</h3>
+                <form action="" class="footer__form">
+                    <input type="email" placeholder="Email" class="footer__input">
+                    <button class="footer__button button">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By <a href="#">Mo Alramly</a>
+        </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-double-fill"></i>
+    </a>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- scrolll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1500
+        });
+    </script>
+    <script src="https://app.embed.im/spark.js" defer></script>
+</body>
+
+</html>
+
+</html>
