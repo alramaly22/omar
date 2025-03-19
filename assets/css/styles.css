@@ -93,7 +93,7 @@
     }
     
     body {
-        background-color: var(--body-color);
+        background-color: var(--white-color);
         color: var(--text-color);
     }
     
@@ -178,7 +178,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        background-color: var(--body-color);
+        background-color: var(--white-color);
         z-index: var(--z-fixed);
         transition: box-shadow .4s;
     }
@@ -205,7 +205,7 @@
     .nav__toggle,
     .nav__colse {
         display: flex;
-        color: var(--white-color);
+        color: var(--body-color);
         font-size: 1.5rem;
         cursor: pointer;
     }
@@ -216,7 +216,7 @@
             position: fixed;
             top: -120%;
             left: 0;
-            background-color: var(--body-color);
+            background-color: var(--white-color);
             width: 100%;
             padding-block: 4rem;
             box-shadow: 0 8px 16px hsla(166, 85%, 8%, .3);
@@ -232,7 +232,7 @@
     }
     
     .nav__link {
-        color: var(--white-color);
+        color: var(--body-color);
         font: var(--font-medium) var(--h1-font-size) var(--second-font);
         line-height: 110%;
         transition: color .4s;
@@ -255,7 +255,7 @@
     /* Add shadow header */
     
     .shadow-header {
-        box-shadow: 0 4px 16px hsl(0deg 0% 100% / 75%);
+        box-shadow: 0px 20px 16px hsl(231.43deg 41.18% 10%);
     }
     /* Active link */
     /*=============== HOME ===============*/
@@ -451,7 +451,7 @@
     /*=============== ABOUT ===============*/
     
     .about {
-        background-color: var(--section-light-color);
+        background-color: var(--body-color);
     }
     
     .about__container {
@@ -470,6 +470,10 @@
     /* .about__description {
         color: var(--white-color);
     } */
+    
+    .about__description {
+        color: hsl(231deg 42.92% 63.48%);
+    }
     
     .about__images {
         position: relative;
@@ -599,7 +603,7 @@
     
     .card__name {
         font-size: var(--h2-font-size);
-        color: var(--second-color);
+        color: var(--body-color);
         margin-bottom: .75rem;
     }
     
@@ -652,13 +656,13 @@
     /*=============== CONTACT ===============*/
     
     .testimonial {
-        background: var(--section-light-color);
+        background: var(--body-color);
     }
     
     .testimonial__card {
         text-align: center;
         background-color: var(--body-color);
-        padding: 2rem 3rem 2.5rem;
+        padding: 2rem 1rem 2.5rem;
         border-radius: 50px;
         border: 2px solid hsl(0deg 0% 47.4%);
         transition: border .4s, background-color .4s;
@@ -693,7 +697,7 @@
     /*=============== nutrantion ===============*/
     
     .nutrantion {
-        background: var(--section-light-color);
+        background: var(--body-color);
     }
     
     .nutrantion__container {
@@ -782,7 +786,7 @@
     
     .brand__img {
         width: 145px;
-        border: 4px solid var(--body-first-color);
+        border: 4px solid var(--body-color);
     }
     
     .brand__img:nth-child(even) {
@@ -861,8 +865,9 @@
     }
     
     .questions__item {
-        background-color: var(--container-color);
-        border-radius: .25rem;
+        background-color: hsl(234.29deg 41.18% 10%);
+        border-radius: 0.25rem;
+        color: white;
     }
     
     .questions__item-title {
@@ -872,7 +877,7 @@
     
     .questions__icon {
         font-size: 1.25rem;
-        color: var(--title-color);
+        color: var(--white-color);
     }
     
     .questions__description {
