@@ -54,6 +54,47 @@
                 </div>
             </div>
 
+
+
+
+            <div class="navbar2">
+                <button class="language-btn" id="languageButton">
+                    <span class="flag-icon">🇬🇧</span>
+                    <span id="selectedLanguage">English</span> | <span id="selectedCurrency">EGP</span>
+                </button>
+            </div>
+
+            <div class="popup" id="popup">
+                <span class="close-btn" onclick="togglePopup()">&times;</span>
+                <h3>اللغة</h3>
+                <label class="lang-option" onclick="selectLanguage('العربية', '🇸🇦')">
+                    <input type="radio" name="language" value="العربية"> العربية
+                </label>
+                <label class="lang-option" onclick="selectLanguage('English', '🇬🇧')">
+                    <input type="radio" name="language" value="English"> English
+                </label>
+                <label class="lang-option" onclick="selectLanguage('فارسی', '🇮🇷')">
+                    <input type="radio" name="language" value="فارسی"> فارسی
+                </label>
+                <label class="lang-option" onclick="selectLanguage('Türkçe', '🇹🇷')">
+                    <input type="radio" name="language" value="Türkçe"> Türkçe
+                </label>
+                <label class="lang-option" onclick="selectLanguage('اردو', '🇵🇰')">
+                    <input type="radio" name="language" value="اردو"> اردو
+                </label>
+
+                <h3>العملة</h3>
+                <select id="currencySelect">
+                    <option value="EGP">جنيه مصري</option>
+                    <option value="USD">دولار أمريكي</option>
+                    <option value="SAR">ريال سعودي</option>
+                    <option value="EUR">يورو</option>
+                </select>
+
+                <button class="confirm-btn" onclick="confirmSelection()">موافق</button>
+            </div>
+
+
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-apps-2-fill"></i>
             </div>
@@ -126,7 +167,7 @@
                 </div>
                 <div class="about__images">
                     <div class="about__shape"></div>
-                    <img src="assets/img/personalfav.jpg" alt="Fitness Coach" class="about__coffee">
+                    <img src="assets/img/te.jpg" alt="Fitness Coach" class="about__coffee">
                 </div>
             </div>
         </section>
@@ -235,6 +276,8 @@
             </div>
         </section>
         <!--==================== testimonial ====================-->
+
+
         <section class="testimonial section" id="testimonial" data-aos="fade-left">
             <h2 class="section__title">
                 Testimonial
@@ -316,6 +359,47 @@
                 </div>
             </div>
         </section>
+
+        <section class="popular section" id="popular" data-aos="fade-right">
+            <h2 data-lang="poph2" class="section__title">
+                Client Success Stories
+            </h2>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <video poster="assets/img/2.png" class="popular__img" id="myVideo" controls>
+                                    <source src="assets/img/v1.MP4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                </article>
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <video poster="assets/img/2.png" class="popular__img" id="myVideo" controls>
+                                    <source src="assets/img/v2.MP4" type="video/mp4">
+                                </video>
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                </article>
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <video poster="assets/img/2.png" class="popular__img vv" id="myVideo" controls>
+                                    <source src="assets/img/v3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                </article>
+
+            </div>
+            <div class="te"> <a data-lang="subscr" href="pricing.html" class="button">Join now</a>
+            </div>
+        </section>
         <!--==================== CONTACT ====================-->
     </main>
     <!--==================== FOOTER ====================-->
@@ -364,7 +448,24 @@
         <i class="ri-arrow-up-double-fill"></i>
     </a>
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script>
+        function togglePopup() {
+            document.getElementById("popup").classList.toggle("show");
+        }
+
+        function selectLanguage(language, flag) {
+            document.getElementById("selectedLanguage").innerText = language;
+            document.querySelector(".language-btn .flag-icon").innerText = flag;
+        }
+
+        function confirmSelection() {
+            const currency = document.getElementById("currencySelect").value;
+            document.getElementById("selectedCurrency").innerText = currency;
+            togglePopup();
+        }
+
+        document.getElementById("languageButton").addEventListener("click", togglePopup);
+    </script>
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!--=============== MAIN JS ===============-->
